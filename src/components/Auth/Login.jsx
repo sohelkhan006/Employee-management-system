@@ -18,7 +18,7 @@ const Login = () => {
             className="flex flex-col items-center justify-center"
           >
             <input
-              className="text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-5 py-3 bg-transparent placeholder:text-gray-600"
+              className="text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400"
               type="email"
               placeholder="Enter your email"
               name=""
@@ -30,7 +30,7 @@ const Login = () => {
               }}
             />
             <input
-              className="mt-3 text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-5 py-3 bg-transparent placeholder:text-gray-600 "
+              className="mt-5 text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400 "
               type="password"
               placeholder="Enter your password"
               name=""
@@ -41,7 +41,7 @@ const Login = () => {
                 setPassword(e.target.value);
               }}
             />
-            <button className="text-black text-xl outline-none border-none bg-emerald-600 rounded-full px-5 py-3 m-4 placeholder:text-gray-600">
+            <button className="w-full bg-emerald-600 text-white text-xl outline-none border-none hover:bg-emerald-600 rounded-full px-8 py-2 mt-7 font-semibold placeholder:text-white">
               Log In
             </button>
           </form>
