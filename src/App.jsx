@@ -7,7 +7,7 @@ import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
 
 const App = () => {
   useEffect(() => {
-    // setLocalStorage();
+    setLocalStorage();
     getLocalStorage()
   });
 
