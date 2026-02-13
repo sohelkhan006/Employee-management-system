@@ -1,10 +1,19 @@
+
 const employees = [
   {
     id: 1,
+    firstName: "Aarav",
     email: "employee1@example.com",
     password: "123",
+    taskCounts: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
     tasks: [
       {
+        taskNumber: 1,
         title: "Prepare sales report",
         description: "Compile monthly sales data and prepare report",
         date: "2026-02-01",
@@ -15,6 +24,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 2,
         title: "Client follow-up",
         description: "Call client regarding contract renewal",
         date: "2026-02-03",
@@ -25,6 +35,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 3,
         title: "Update CRM",
         description: "Update customer records in CRM system",
         date: "2026-02-05",
@@ -38,10 +49,18 @@ const employees = [
   },
   {
     id: 2,
+    firstName: "Vihaan",
     email: "employee2@example.com",
     password: "123",
+    taskCounts: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
+        taskNumber: 1,
         title: "Design homepage",
         description: "Create UI design for homepage",
         date: "2026-02-02",
@@ -52,6 +71,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 2,
         title: "Fix login bug",
         description: "Resolve authentication issue",
         date: "2026-02-04",
@@ -62,6 +82,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 3,
         title: "Code review",
         description: "Review teammate pull requests",
         date: "2026-02-06",
@@ -75,10 +96,18 @@ const employees = [
   },
   {
     id: 3,
+    firstName: "Ishaan",
     email: "employee3@example.com",
     password: "123",
+    taskCounts: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
+        taskNumber: 1,
         title: "Write test cases",
         description: "Create unit test cases for new module",
         date: "2026-02-01",
@@ -89,6 +118,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 2,
         title: "Bug verification",
         description: "Verify resolved bugs",
         date: "2026-02-03",
@@ -99,6 +129,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 3,
         title: "Automation script",
         description: "Write automation test script",
         date: "2026-02-07",
@@ -112,10 +143,18 @@ const employees = [
   },
   {
     id: 4,
+    firstName: "Ananya",
     email: "employee4@example.com",
     password: "123",
+    taskCounts: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
     tasks: [
       {
+        taskNumber: 1,
         title: "Content writing",
         description: "Write blog post for product launch",
         date: "2026-02-02",
@@ -126,6 +165,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 2,
         title: "SEO optimization",
         description: "Optimize blog for search engines",
         date: "2026-02-05",
@@ -136,6 +176,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 3,
         title: "Social media post",
         description: "Schedule social media updates",
         date: "2026-02-06",
@@ -149,10 +190,18 @@ const employees = [
   },
   {
     id: 5,
+    firstName: "Rohan",
     email: "employee5@example.com",
     password: "123",
+    taskCounts: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
+        taskNumber: 1,
         title: "Inventory check",
         description: "Check and update inventory records",
         date: "2026-02-01",
@@ -163,6 +212,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 2,
         title: "Vendor meeting",
         description: "Attend meeting with suppliers",
         date: "2026-02-04",
@@ -173,6 +223,7 @@ const employees = [
         failed: false,
       },
       {
+        taskNumber: 3,
         title: "Order processing",
         description: "Process pending orders",
         date: "2026-02-07",
@@ -189,7 +240,7 @@ const employees = [
 const admin = [
   {
     id: 1,
-    email: "admin@example.com",
+    email: "admin@me.com",
     password: "123",
   },
 ];
@@ -198,8 +249,10 @@ export const setLocalStorage = () => {
   localStorage.setItem("employees", JSON.stringify(employees));
   localStorage.setItem("admin", JSON.stringify(admin));
 };
+
 export const getLocalStorage = () => {
   const employees = JSON.parse(localStorage.getItem("employees"));
   const admin = JSON.parse(localStorage.getItem("admin"));
-  console.log(employees, admin);
+
+  return { employees, admin };
 };
