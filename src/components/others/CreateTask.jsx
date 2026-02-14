@@ -7,7 +7,7 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Task title</h3>
             <input
-              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
+              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4 text-white"
               type="text"
               placeholder="Make a UI design"
             />
@@ -16,7 +16,7 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Date</h3>
             <input
-              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
+              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4 text-white"
               type="date"
               name=""
               id=""
@@ -25,7 +25,7 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Assign to</h3>
             <input
-              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
+              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4 text-white"
               type="text"
               name=""
               id=""
@@ -35,7 +35,7 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Category</h3>
             <input
-              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
+              className="text-sm px-2 py-1  w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4 text-white"
               type="text"
               name=""
               id=""
@@ -47,7 +47,7 @@ const CreateTask = () => {
         <div className="w-2/5 flex flex-col items-start  ">
           <h3 className="text-sm text-gray-300 mb-0.5">Description</h3>
           <textarea
-            className="w-full h-44 text-sm py-2 px-4 rounded bg-transparent outline-none border border-gray-400"
+            className="w-full h-44 text-sm py-2 px-4 rounded bg-transparent outline-none border border-gray-400 text-white"
             name=""
             id=""
             placeholder="Detailed description of the task"
