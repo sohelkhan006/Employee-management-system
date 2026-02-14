@@ -19,7 +19,7 @@ const Login = ({handleUser}) => {
             className="flex flex-col items-center justify-center"
           >
             <input
-              className="text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400"
+              className="text-white text-xl outline-none border-2 border-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400"
               type="email"
               placeholder="Enter your email"
               name=""
@@ -31,7 +31,7 @@ const Login = ({handleUser}) => {
               }}
             />
             <input
-              className="mt-5 text-black text-xl outline-none border-2 border-b-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400 "
+              className="mt-5 text-white text-xl outline-none border-2 border-emerald-600 rounded-full px-6 py-2 bg-transparent placeholder:text-gray-600 hover:placeholder:text-gray-400 "
               type="password"
               placeholder="Enter your password"
               name=""
