@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { setLocalStorage } from "../../utils/LocalStorage";
 
-const Header = ({ data }) => {
+const Header = (props) => {
   // const [username, setUserName] = useState('')
   // if (!data) {
   //   setUserName('admin')
@@ -11,14 +11,17 @@ const Header = ({ data }) => {
 
   const logOutUser = () => {
     localStorage.removeItem("loggedInUser", "");
-    window.location.reload();
+    props.changeUser("");
+
   };
 
   return (
     <div className="flex justify-between items-end">
       <h1 className="text-2xl font-medium  text-white">
         hello <br />
-        <span className="text-3xl font-semibold text-white">{data?.firstName || "Admin"}👋</span>
+        <span className="text-3xl font-semibold text-white">
+          {props.data?.firstName || "Admin"}👋
+        </span>
       </h1>
       <button
         className="bg-red-600 text-white px-6 py-2 rounded-sm text-xl font-medium"
